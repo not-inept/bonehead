@@ -1,0 +1,86 @@
+body {
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+}
+
+#top {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+
+	height: 3%;
+
+	background-color: rgb(0,0,0);
+}
+
+#left {
+	position: absolute;
+	top: 3%;
+	left: 0px;
+	bottom: 0px;
+
+	width: 2%;
+
+	background-color: rgb(0,255,0);
+}
+
+#right {
+	position: absolute;
+	top: 3%;
+	right: 0px;
+	bottom: 0px;
+
+	width: 15%;
+
+	background-color: rgb(255,0,0);
+}
+
+#center {
+	position: absolute;
+	top: 3%;
+	left: 2%;
+	right: 15%;
+	bottom: 15%;
+
+	background-color: rgb(0,0,255);
+}
+
+#bottom {
+	position: absolute;
+	left: 2%;
+	right: 15%;
+	bottom: 0px;
+
+	height: 15%;
+	
+	background-color: rgb(255,255,0);
+}
+
+.tran {
+	transition: all 0.5s, ease-out;
+}
+
+.flesh {
+  background-color: #29e;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px;
+
+  /* The width is set in the element's HTML
+   * so that it can be read by the resizing
+   * function
+   */
+
+   transform: translate(0px, 0px) rotate(100deg);
+}
+
+.flesh::before {
+  content: "#" attr(id);
+  color: #000;
+}
